@@ -25,6 +25,7 @@ class ViewController: UIViewController {
     var webView: WKWebView!
     var tempView: WKWebView!
     var progressBar : UIProgressView!
+    var urlString: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +49,8 @@ class ViewController: UIViewController {
             activityIndicator.stopAnimating()
         } else {
             // exit app
-            UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shared, for: nil)
+//            UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shared, for: nil)
+            self.navigationController?.popViewController(animated: true)
         }
     }
     // open menu in page, or fire alternate function on large screens
@@ -185,7 +187,8 @@ class ViewController: UIViewController {
 
     // load startpage
     func loadAppUrl() {
-        let urlRequest = URLRequest(url: webAppUrl!)
+        let webUrl = URL.init(string: urlString)!
+        let urlRequest = URLRequest(url: webUrl)
         webView.load(urlRequest)
     }
     
