@@ -32,8 +32,14 @@ class DomainViewController: UIViewController {
                 debugPrint("Something went wrong")
                 return
             }
-            viewController.urlString = textFieldDomainName.text ?? ""
+            viewController.urlString = "http://\(textFieldDomainName.text ?? "").westnetmlp.com/"
             self.navigationController?.pushViewController(viewController, animated: true)
+        } else {
+            let alertView = UIAlertController.init(title: "Alert", message: "Please input subdomain", preferredStyle: .alert)
+            alertView.addAction(UIAlertAction.init(title: "OK", style: .default, handler: { (action) in
+                
+            }))
+            self.present(alertView, animated: true, completion: nil)
         }
     }
 }
