@@ -124,7 +124,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="It2-Qq-B3H">
-                                <rect key="frame" x="16" y="0.0" width="382" height="462"/>
+                                <rect key="frame" x="16" y="88" width="382" height="462"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ES-ji-0Ed">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="340"/>
@@ -132,22 +132,22 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sge-Sq-DeJ">
                                                 <rect key="frame" x="4" y="0.0" width="374" height="340"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ltW-FS-MtH">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mqO-FP-XQ3">
                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="210"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HeaderImage" translatesAutoresizingMaskIntoConstraints="NO" id="49x-hK-0Ed">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HeaderImage" translatesAutoresizingMaskIntoConstraints="NO" id="AUm-If-ha5">
                                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="200"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="200" id="fin-Q2-IX5"/>
+                                                                    <constraint firstAttribute="height" constant="200" id="CDF-5g-8uN"/>
                                                                 </constraints>
                                                             </imageView>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="bottom" secondItem="49x-hK-0Ed" secondAttribute="bottom" constant="10" id="PWS-Ha-LHj"/>
-                                                            <constraint firstItem="49x-hK-0Ed" firstAttribute="top" secondItem="ltW-FS-MtH" secondAttribute="top" id="bkN-G7-R4c"/>
-                                                            <constraint firstItem="49x-hK-0Ed" firstAttribute="leading" secondItem="ltW-FS-MtH" secondAttribute="leading" id="gPV-02-rQV"/>
-                                                            <constraint firstAttribute="trailing" secondItem="49x-hK-0Ed" secondAttribute="trailing" id="nKG-3n-wI9"/>
+                                                            <constraint firstAttribute="bottom" secondItem="AUm-If-ha5" secondAttribute="bottom" constant="10" id="14U-ig-7et"/>
+                                                            <constraint firstAttribute="trailing" secondItem="AUm-If-ha5" secondAttribute="trailing" id="2zZ-Rs-QfW"/>
+                                                            <constraint firstItem="AUm-If-ha5" firstAttribute="leading" secondItem="mqO-FP-XQ3" secondAttribute="leading" id="O3l-YY-ryc"/>
+                                                            <constraint firstItem="AUm-If-ha5" firstAttribute="top" secondItem="mqO-FP-XQ3" secondAttribute="top" id="aCT-Ci-5M1"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oD8-s9-jrV">
@@ -304,7 +304,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="It2-Qq-B3H" firstAttribute="leading" secondItem="bWT-hx-f33" secondAttribute="leading" constant="16" id="Cxy-xu-gAw"/>
-                            <constraint firstItem="It2-Qq-B3H" firstAttribute="top" secondItem="bWT-hx-f33" secondAttribute="top" id="TOe-hO-fr5"/>
+                            <constraint firstItem="It2-Qq-B3H" firstAttribute="top" secondItem="AoB-fJ-TSL" secondAttribute="top" id="TOe-hO-fr5"/>
                             <constraint firstAttribute="trailing" secondItem="It2-Qq-B3H" secondAttribute="trailing" constant="16" id="b8I-Kl-B8I"/>
                         </constraints>
                     </view>
